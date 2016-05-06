@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'TSTARPRO-Bold';
+  src: url("../fonts/TSTARPRO-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/TSTARPRO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TSTARPRO-Bold.woff") format("woff"), url("../fonts/TSTARPRO-Bold.ttf") format("truetype"), url("../fonts/TSTARPRO-Bold.svg#04b6fe9719e4ac6d276984d3281c3c0d") format("svg");
+  /* Legacy iOS */
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FF DIN Round Pro - Regular';
+  src: url("../fonts/FF DIN Round Pro - Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/FF DIN Round Pro - Regular?#iefix") format("embedded-opentype"), url("../fonts/FF DIN Round Pro - Regular.woff") format("woff"), url("../fonts/FF DIN Round Pro - Regular.ttf") format("truetype"), url("../fonts/FF DIN Round Pro - Regular.svg#04b6fe9719e4ac6d276984d3281c3c0d") format("svg");
+  /* Legacy iOS */
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FF DIN Round Pro - Medium';
+  src: url("../fonts/FF DIN Round Pro - Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/FF DIN Round Pro - Medium?#iefix") format("embedded-opentype"), url("../fonts/FF DIN Round Pro - Medium.woff") format("woff"), url("../fonts/FF DIN Round Pro - Medium.ttf") format("truetype"), url("../fonts/FF DIN Round Pro - Medium.svg#04b6fe9719e4ac6d276984d3281c3c0d") format("svg");
+  /* Legacy iOS */
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FF DIN Round Pro - Bold';
+  src: url("../fonts/FF DIN Round Pro - Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/FF DIN Round Pro - Bold?#iefix") format("embedded-opentype"), url("../fonts/FF DIN Round Pro - Bold.woff") format("woff"), url("../fonts/FF DIN Round Pro - Bold.ttf") format("truetype"), url("../fonts/FF DIN Round Pro - Bold.svg#04b6fe9719e4ac6d276984d3281c3c0d") format("svg");
+  /* Legacy iOS */
+  font-style: bold;
+  font-weight: 700;
+}
+h1 {
+  font-size: 20px;
+  font-family: 'FF DIN Round Pro - Medium';
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'FF DIN Round Pro - Medium';
+}
+
+body {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'FF DIN Round Pro - Regular';
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header {
+  text-align: left;
+  margin-top: 5%;
+}
+
+header a {
+  font-family: 'TSTARPRO-Bold';
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.tagline span {
+  font-family: 'FF DIN Round Pro - Regular';
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.feature-container {
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+}
+
+.feature-header {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+}
+
+.feature-footer {
+  display: inline-block;
+  height: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.feature-footer iframe {
+  margin-bottom: -5px;
+  margin-left: 5px;
+}
+
+.feature {
+  font-family: 'FF DIN Round Pro - Medium';
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.feature span {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.feature h1 {
+  font-family: 'FF DIN Round Pro - Medium';
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.feature a {
+  color: white;
+}
+
+#timeline {
+  border-left: 3px solid black;
+}
+
+#timeline ul {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.team-photo {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

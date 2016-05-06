@@ -1,0 +1,52 @@
+{% extends "templates/partials/base.html" %}
+
+{% block title %}{% parent %}{% endblock %}
+
+{% block content %}
+
+
+<div class="tagline"> 
+ <span>{{ cms.holdingpage.tagline }}</span>
+</div>
+
+
+<section>
+  <h1>Our Goal</h1>
+  <span>{{ cms.holdingpage.goals }}</span>
+</div>
+</section>
+
+<section>
+<h1>Who are we?</h1>
+
+ <img class="team-photo" src="{{ cms.holdingpage.group_photo|imageCrop(0) }}">
+
+
+  <span>{% for row in cms.holdingpage.who_we_are %}</span>
+    <h2>{{ row.name }}</h2>
+    <span>{{ row.bio }}</span>
+    <!-- <img src="{{ row.headshot|imageSize(200, 200) }}"> -->
+    {% endfor %}
+ </section>
+
+<h1> Our Roadmap </h1>
+
+<div id="timeline">
+        {% for row in cms.holdingpage.roadmap %}
+    <ul>
+      <li><span>${{ row.number }}</span> - {{ row.paragraph_text }} </li>
+    </ul>
+        {% endfor %}
+</div>    
+
+  
+    <div class="feature-footer">
+  <section class="feature">
+  <span>{{ cms.holdingpage.footer_text|safe }} <iframe src="https://github.com/j0die/supportfm?type=star&count=true&size=small" frameborder="0" scrolling="0" width="160px" height="20px"></iframe></span>
+  </section>
+  </div>
+        
+     
+      
+
+{% endblock %}
