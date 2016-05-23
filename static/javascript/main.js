@@ -3,6 +3,7 @@ jQuery(document).ready(function($){
 	$('.donate-button').hover(
 	function(){$('body').toggleClass('rainbow');}
 	);
+  	
 	
 	var $timeline_block = $('.cd-timeline-block');
 
@@ -13,7 +14,7 @@ jQuery(document).ready(function($){
 		}
 	});
 
-	//on scolling, show/animate timeline blocks when enter the viewport
+	//on scrolling, show/animate timeline blocks when enter the viewport
 	$(window).on('scroll', function(){
 		$timeline_block.each(function(){
 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {

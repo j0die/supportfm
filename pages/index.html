@@ -51,7 +51,9 @@
       
       <div class="timeline-row">
 	      
-	      <span class="number">${{ row.number }}</span>
+	      <span class="number">${% filter replace("[0-9](?=(?:[0-9]{3})+(?![0-9]))", "$&,", "g") %}
+		  {{ row.number }}
+        {% endfilter %}</span>
 	      
 	      <div class="timeline-text"> {{ row.paragraph_text }}</div>
 	  

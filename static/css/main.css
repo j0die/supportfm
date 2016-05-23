@@ -379,13 +379,13 @@ section.roadmap {
   font-family: 'Courier Prime Sans', sans-serif;
   font-weight: 400;
   font-size: 26px;
-  min-width: 120px;
+  min-width: 140px;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .number {
     font-size: 18px;
-    min-width: 80px;
+    min-width: 100px;
   }
 }
 
@@ -412,12 +412,12 @@ section.roadmap {
   vertical-align: top;
   display: inline-block;
   width: 60%;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 768px) {
   .timeline-text {
-    width: 60%;
-    margin-left: 14px;
+    width: 50%;
+    margin-left: 12px;
   }
 }
 
