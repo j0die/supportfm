@@ -1,4 +1,9 @@
 jQuery(document).ready(function($){
+	
+	$('.donate-button').hover(
+	function(){$('body').toggleClass('rainbow');}
+	);
+	
 	var $timeline_block = $('.cd-timeline-block');
 
 	//hide timeline blocks which are outside the viewport

@@ -11,9 +11,11 @@ lib-cov
 pids
 logs
 results
+sass/.sass-cache
 
 npm-debug.log
 node_modules
 
 /.build
 /.firebase.conf
+/.sass-cache

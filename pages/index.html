@@ -5,49 +5,70 @@
 {% block content %}
 
 
-<div class="tagline"> 
- <span>{{ cms.holdingpage.tagline }}</span>
-</div>
-
-
-<section>
+<section class="goals grey">
+<div class="wrap">
   <h1>Our Goal</h1>
   <span>{{ cms.holdingpage.goals }}</span>
+</div>
 </section>
 
-<section>
+<section class="why">
+<div class="wrap">
   <h1>{{ cms.holdingpage.why_heading }}</h1>
   <span>{{ cms.holdingpage.why_blurb }}</span>
+</div>
 </section>        
         
 
-<section>
+<section class="who grey">
+<div class="who-wrap">
 <h1>Who are we?</h1>
 
- <img class="team-photo" src="{{ cms.holdingpage.group_photo|imageCrop(0) }}">
+ <!-- <img class="team-photo" src="{{ cms.holdingpage.group_photo|imageCrop(0) }}"> -->
 
 
   <span>{% for row in cms.holdingpage.who_we_are %}</span>
+  	<div class="profile">
     <h2>{{ row.name }}</h2>
     <span>{{ row.bio }}</span>
     <!-- <img src="{{ row.headshot|imageSize(200, 200) }}"> -->
-    {% endfor %}
+  </div>{% endfor %}
+  
+</div>
  </section>
 
-<h1> Our Roadmap </h1>
+<section class="roadmap" id="roadmap">
+<div class="wrap">
+
+<h1>Our Roadmap</h1>
 
 <div id="timeline">
+	<ul>
         {% for row in cms.holdingpage.roadmap %}
-    <ul>
-      <li><span>${{ row.number }}</span> - {{ row.paragraph_text }} </li>
-    </ul>
+      <li>
+      
+      <div class="bullet"></div>
+      
+      <div class="timeline-row">
+	      
+	      <span class="number">${{ row.number }}</span>
+	      
+	      <div class="timeline-text"> {{ row.paragraph_text }}</div>
+	  
+	  </div>
+      </li>
         {% endfor %}
-</div>    
+    </ul>
+</div>
 
+<a href="#" class="donate-button">Donate</a>
+
+</div>
+</section>
   
     <div class="feature-footer">
   <section class="feature">
-  <span>{{ cms.holdingpage.footer_text|safe }} <iframe src="https://github.com/j0die/supportfm?type=star&count=true&size=small" frameborder="0" scrolling="0" width="160px" height="20px"></iframe></span>
+  <span>{{ cms.holdingpage.footer_text|safe }}</span>
   </section>
   </div>
         
