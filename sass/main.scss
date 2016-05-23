@@ -172,12 +172,18 @@ h1 {
 	font-size: 30px;
 	font-family: 'Cooper Hewitt', sans-serif;
 	font-weight: 700;
+	@media screen and (max-width: 768px) {
+	  font-size: 20px;
+	}
 }
 
 h2 {
 	font-size: 24px;
 	font-family: 'Cooper Hewitt', sans-serif;
 	font-weight: 600;
+	@media screen and (max-width: 768px) {
+	  font-size: 16px;
+	}
 }
 
 
@@ -185,6 +191,9 @@ body {
 	font-family: 'Cooper Hewitt', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
+	@media screen and (max-width: 768px) {
+	  font-size: 14px;
+	}
 }
 
 header {
@@ -192,18 +201,22 @@ header {
 	margin-top: 100px;
 	margin-bottom: 80px;
 	@include container(600px);
+	@media screen and (max-width: 768px) {
+	  margin-top: 40px;
+	  margin-bottom: 40px;
+	}
 }
 
 header a { 
-
 	font-family: 'Cooper Hewitt', sans-serif;
 	font-weight:600;
 	text-decoration: none;
 	color: black;
 	font-size: 50px;
 	text-transform: uppercase;
-
-
+	@media screen and (max-width: 768px) {
+	  font-size: 30px;
+	}
  }
 
  .tagline {
@@ -211,7 +224,8 @@ header a {
  	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
+	margin-left: 20px;
+	margin-right: 20px;
  }
 
  .tagline span {
@@ -219,7 +233,10 @@ header a {
  	font-family: 'Cooper Hewitt', sans-serif;
  	font-size: 24px;
  	text-decoration: underline;
- 	font-weight: 400;
+ 	font-weight: 300;
+ 	@media screen and (max-width: 768px) {
+	  font-size: 16px;
+	}
 
  }
 
@@ -234,16 +251,21 @@ header a {
  	}
  	&.roadmap {
 	 	padding-bottom: 100px;
+	 	@media screen and (max-width: 768px) {
+	 	  padding-bottom: 60px;
+		}
  	}
  }
  
  .wrap {
-	 @include container(600px); 
-	 
+	 @include container(600px);
+	 @media screen and (max-width: 768px) {
+	  @include container(90%);
+	}
  }
  
  .who-wrap {
-	max-width: 90%;
+	max-width: 900px;
     margin-left: auto;
     margin-right: auto;
  }
@@ -257,27 +279,28 @@ header a {
     padding-right: 3.33333%;
     display:inline-block;
     vertical-align:top;
+    @media screen and (max-width: 768px) {
+	    width: 100%;
+	}
 	h2 {
 		font-size: 20px;
+		@media screen and (max-width: 768px) {
+			font-size: 14px;
+		} 
 	}
 	span {
 		font-size: 14px;
 	}
 }
 
- .feature-container {
-
- 	display: inline-block;
- 	height: 100px;
- 	width: 100%;
- }
-
-  .feature-header {
-
+.feature-header {
   display: inline-block;
   height: 50px;
   width: 100%;
- }
+  @media screen and (max-width: 768px) {
+	  height: 30px;
+  }
+}
 
 
   .feature-footer {
@@ -306,27 +329,25 @@ header a {
     padding-top: 20px;
     padding-bottom: 20px;
     margin:0;
+    @media screen and (max-width: 768px) {
+	  font-size: 12px;
+	  padding-top: 10px;
+      padding-bottom: 10px;
+    }    
 }
 
 
 .feature span {
-
 	text-transform: uppercase;
 	font-size: 15px;
-
-}
-
-.feature h1
-{
-	font-family: 'FF DIN Round Pro - Medium';
-	text-transform: uppercase;
-	font-size: 16px;
-	text-decoration: underline;
-	margin: 0;
+	@media screen and (max-width: 768px) {
+		font-size:10px;
+		margin: 0 20px;
+	}
 }
 
 .feature a {
-	color: #000;;
+	color: #000;
 }
 
 
@@ -335,14 +356,20 @@ header a {
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+	   border-left: 2px solid #444;
+	    }
 }
 
 #timeline ul {
   padding-left: 16px;
   font-size: 20px;
   list-style:none;
+  @media screen and (max-width: 768px) {
+	  font-size:16px;
+  }
   li {
-	  margin-bottom: 20px;
+	  margin-bottom: 10px;
   }
 }
 
@@ -356,6 +383,10 @@ header a {
 	font-size: 26px;
 	min-width: 120px;
 	display:inline-block;
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+		min-width:80px;
+	}
 }
 
 .bullet {
@@ -366,6 +397,13 @@ header a {
 	display: inline-block;
 	margin-right:30px;
 	margin-left:-26px;
+	@media screen and (max-width: 768px) {
+		width: 10px;
+		height:10px;
+		border-radius:5px;
+		margin-right:16px;
+		margin-left:-22px;
+	}
 }
 
 .timeline-text {
@@ -373,6 +411,10 @@ header a {
     display: inline-block;
     width: 60%;
     margin-left: 20px;
+    @media screen and (max-width: 768px) {
+	    width:60%;
+	    margin-left:14px;
+	}
 }
 
 .team-photo {
@@ -411,6 +453,7 @@ background-size: 100% 1000%;
 
 .donate-button {
 	position: fixed;
+	cursor:pointer;
 	bottom: 60px;
 	right: 60px;
 	display:block;
@@ -429,6 +472,15 @@ background-size: 100% 1000%;
 	-webkit-animation:spin 8s linear infinite;
     -moz-animation:spin 8s linear infinite;
     animation:spin 8s linear infinite;
+    @media screen and (max-width: 768px) {
+	    bottom:40px;
+	    right:20px;
+	    width:80px;
+	    height:80px;
+	    border-radius:80px;
+	    font-size:16px;
+	    line-height:82px;
+	}
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
