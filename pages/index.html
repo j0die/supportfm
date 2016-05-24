@@ -8,16 +8,23 @@
 <section class="goals grey">
 <div class="wrap">
   <h1>Our Goal</h1>
-  <span>{{ cms.holdingpage.goals }}</span>
+  <span>{{ cms.holdingpage.goals|markdown }}</span>
 </div>
 </section>
 
 <section class="why">
 <div class="wrap">
   <h1>{{ cms.holdingpage.why_heading }}</h1>
-  <span>{{ cms.holdingpage.why_blurb }}</span>
+  <span>{{ cms.holdingpage.why_blurb|markdown }}</span>
 </div>
-</section>        
+</section>  
+
+<section class="why-now">
+<div class="wrap">
+  <h1>{{ cms.holdingpage.why_now_heading }}</h1>
+  <span>{{ cms.holdingpage.why_now_blurb|markdown }}</span>
+</div>
+</section>           
         
 
 <section class="who grey">
