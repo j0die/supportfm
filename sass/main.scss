@@ -215,28 +215,6 @@ header a {
 	font-size: 50px;
 	text-transform: uppercase;
 	padding: 20px 20px 5px 20px;
-	background: linear-gradient(204deg, rgba(255, 0, 0, 0.1), rgba(255, 133, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 255, 27, 0.1), rgba(0, 56, 255, 0.1), rgba(171, 0, 255, 0.1), rgba(255, 0, 196, 0.1));
-	background-size: 1400% 1400%;
-
-	-webkit-animation: AnimationName 30s ease infinite;
-	-moz-animation: AnimationName 30s ease infinite;
-	animation: AnimationName 30s ease infinite;
-	
-	@-webkit-keyframes AnimationName {
-	    0%{background-position:0% 29%}
-	    50%{background-position:100% 72%}
-	    100%{background-position:0% 29%}
-	}
-	@-moz-keyframes AnimationName {
-	    0%{background-position:0% 29%}
-	    50%{background-position:100% 72%}
-	    100%{background-position:0% 29%}
-	}
-	@keyframes AnimationName { 
-	    0%{background-position:0% 29%}
-	    50%{background-position:100% 72%}
-	    100%{background-position:0% 29%}
-}
 	@media screen and (max-width: 768px) {
 	  font-size: 30px;
 	}
@@ -325,7 +303,6 @@ header a {
   }
 }
 
-
   .feature-footer {
   height:0;
   width: 100%;
@@ -359,6 +336,30 @@ header a {
     }    
 }
 
+.feature-header > .feature {
+		background: linear-gradient(204deg, rgba(255, 0, 0, 0.1), rgba(255, 133, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 255, 27, 0.1), rgba(0, 56, 255, 0.1), rgba(171, 0, 255, 0.1), rgba(255, 0, 196, 0.1));
+	background-size: 1400% 1400%;
+
+	-webkit-animation: AnimationName 30s ease infinite;
+	-moz-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+	
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:0% 29%}
+	    50%{background-position:100% 72%}
+	    100%{background-position:0% 29%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:0% 29%}
+	    50%{background-position:100% 72%}
+	    100%{background-position:0% 29%}
+	}
+	@keyframes AnimationName { 
+	    0%{background-position:0% 29%}
+	    50%{background-position:100% 72%}
+	    100%{background-position:0% 29%}
+	    }
+}
 
 .feature span {
 	text-transform: uppercase;
