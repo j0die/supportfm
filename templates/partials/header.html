@@ -8,11 +8,12 @@
   </div>
 
 <header> 
+<span class="translate">{% if page_class == 'espanol' %} View in <a href="/">English</a>{% else %} Vista en <a href="/espanol">Español </a>{% endif %}</span>
 
 <a href="/">Support.fm</a>
 
 <div class="tagline"> 
- <span>{{ cms.holdingpage.tagline|markdown }}</span>
+ <span>{% if page_class == 'espanol' %}{{ cms.holdingpagespanish.tagline|markdown }}{% else %}{{ cms.holdingpage.tagline|markdown }} {% endif %}</span>
 </div>
 
 </header>

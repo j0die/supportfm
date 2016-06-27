@@ -1,0 +1,48 @@
+{# ------------------------------------------------------- #}
+{# ONE OFF VIEW holdingpagespanish #}
+{# This page can use any data from http:localhost:2000/cms/#/form/holdingpagespanish/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this holdingpagespanish's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ cms.holdingpagespanish.name }}{% endblock %}
+{% block content %}
+
+         {{ cms.holdingpagespanish.tagline }}
+     
+        {{ cms.holdingpagespanish.goals }}
+     
+        {% for row in cms.holdingpagespanish.who_we_are %}
+        
+              {{ row.name }}
+    
+              {{ row.bio }}
+     
+        <img src="{{ row.headshot|imageSize(200, 200) }}"> 
+        
+        {% endfor %}
+     
+       
+        {{ cms.holdingpagespanish.support_us_link }}
+   
+        {% for row in cms.holdingpagespanish.roadmap %}
+    
+              {{ row.number }}
+        
+              {{ row.paragraph_text }}
+         
+        {% endfor %}
+      
+        {{ cms.holdingpagespanish.footer_text }}
+    
+        {{ cms.holdingpagespanish.preview_url }}
+     
+        {{ cms.holdingpagespanish.slug }}
+     
+{% endblock %}
+

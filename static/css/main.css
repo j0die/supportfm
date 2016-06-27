@@ -570,4 +570,24 @@ section.roadmap {
   }
 }
 
+ .translate {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto;
+    font-size: 14px;
+    clear: both;
+    position: relative;
+    top: -50px;
+
+}
+
+ .translate a {
+    font-size: 14px;
+    margin: 0;
+    padding: 3px;
+    text-decoration: underline;
+}
+
+
 /*# sourceMappingURL=main.css.map */
