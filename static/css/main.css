@@ -577,7 +577,7 @@ section.roadmap {
   font-size: 14px;
   clear: both;
   position: relative;
-  top: -50px;
+  top: -35px;
 }
 
 .translate a {
@@ -733,17 +733,21 @@ form span {
 }
 
 /* rainbow */
-.Rainbow {
+.Rainbow-stripe-container {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -5px;
   display: block;
   overflow: hidden;
   margin: auto;
   width: 26rem;
   height: 13rem;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .Rainbow-stripe {
@@ -755,8 +759,8 @@ form span {
   border-radius: 100%;
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
-  -webkit-animation: rainbow 1000ms cubic-bezier(0.86, 0, 0.07, 1) forwards;
-  animation: rainbow 1000ms cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  -webkit-animation: rainbow-stripe 1000ms cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  animation: rainbow-stripe 1000ms cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 
 .Rainbow-stripe--violet {
@@ -836,7 +840,7 @@ form span {
   animation-delay: 600ms;
 }
 
-@-webkit-keyframes rainbow {
+@-webkit-keyframes rainbow-stripe {
   0% {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);
@@ -846,7 +850,7 @@ form span {
     transform: rotate(0);
   }
 }
-@keyframes rainbow {
+@keyframes rainbow-stripe {
   0% {
     -webkit-transform: rotate(-180deg);
     transform: rotate(-180deg);

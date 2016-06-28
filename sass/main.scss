@@ -521,7 +521,7 @@ background-size: 100% 1000%;
     font-size: 14px;
     clear: both;
     position: relative;
-    top: -50px;
+    top: -35px;
 
 }
 
@@ -690,12 +690,17 @@ textarea:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -5px;
   display: block;
   overflow: hidden;
   margin: auto;
   width: 26rem;
   height: 13rem;
+
+  -webkit-transform: scale(.8);
+-moz-transform: scale(.8);
+-o-transform: scale(.8);
+transform: scale(.8);
 }
 
 .Rainbow-stripe {
