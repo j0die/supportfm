@@ -707,6 +707,6 @@ form span {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .Rainbow-stripe-container {
-    left: -27px; } }
+    left: -23px; } }
 
 /*# sourceMappingURL=main.css.map */
