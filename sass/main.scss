@@ -823,3 +823,22 @@ transform: scale(.8);
     margin-top: 150px;
     height: 10px;
 }
+
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .Rainbow-stripe-container {
+
+  left: -27px;
+ 
+}
+
+}
