@@ -3,12 +3,12 @@
 </form>-->
   <div class="feature-header">
   <section class="feature">
-  <span>Checkout Our Generosity Campaign <a href="{{ cms.holdingpage.support_us_link }}">Here</a></span>
+  <span> {% if page_class == 'espanol' %}Visite Nuestra Campaña <a href="{{ cms.holdingpage.support_us_link }}">Aquí</a> {% else %} Checkout Our Generosity Campaign <a href="{{ cms.holdingpage.support_us_link }}">Here</a>{% endif %}</span>
   </section>
   </div>
 
 <header> 
-<span class="translate">{% if page_class == 'espanol' %} View in <a href="/">English</a>{% else %} Vista en <a href="/espanol">Español </a>{% endif %}</span>
+<span class="translate">{% if page_class == 'espanol' %} View in <a href="/">English</a>{% else %} Ver en <a href="/espanol">Español </a>{% endif %}</span>
 
 <a href="/">Support.fm</a>
 
