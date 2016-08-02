@@ -76,9 +76,22 @@
     </ul>
 </div>
 
+<div id="updates-list">
+	<h2>Updates:</h2>
+  
+   {% set data = cms.updates %}
+   {% set data = data|sort('publish_date', true) %}
+   {% set data = paginate(data, 5) %}
+  
+  <ul>
+    {% for object in data %}
+      <li><span class="date">{{ object.publish_date|date('m/d/Y') }}</span><a href="{{ url(object) }}">{{ object.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
+
 <div class="wrap">
-
-
 
 <div id="contact-form">
 
