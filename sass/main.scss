@@ -1,124 +1,5 @@
 @import "susy";
 
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-Bold.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-Bold.svg#1123276b5c1ee64de55b5989a180830a') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  700;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-BoldItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-BoldItalic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-BoldItalic.svg#2dff4d776e1fa52e1f283e3ca84e4446') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  700;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-Book.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-Book.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-Book.svg#9708111bf909257f33fb727b8b0def42') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-BookItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-BookItalic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-BookItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-BookItalic.svg#1d47dd15bc5c567c55824e8fddfcabc9') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-Light.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-Light.svg#0ebcea87d7a3234bbf81e32498705b49') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  200;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-LightItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-LightItalic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-LightItalic.svg#6db8cec7b2b48c5700c47cbdb30b21f2') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  200;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-Medium.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-Medium.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-Medium.svg#122596073613c9425bd1b6dd4714bb3e') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  500;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-MediumItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-MediumItalic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-MediumItalic.svg#648faaabe56c356dcc52e41e4a85a215') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  500;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-Semibold.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-Semibold.svg#10f056fa985f6a9aa76248d076e16a54') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  600;
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url('../fonts/CooperHewitt-SemiboldItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CooperHewitt-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/CooperHewitt-SemiboldItalic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/CooperHewitt-SemiboldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/CooperHewitt-SemiboldItalic.svg#9229f2faab296805df3704dcd9233864') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  600;
-}
 
 @font-face {
   font-family: 'Courier Prime Sans';
@@ -170,7 +51,7 @@
 
 h1 {
 	font-size: 30px;
-	font-family: 'Cooper Hewitt', sans-serif;
+	font-family: 'Space Mono', sans-serif;
 	font-weight: 700;
 	@media screen and (max-width: 768px) {
 	  font-size: 20px;
@@ -179,7 +60,7 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	font-family: 'Cooper Hewitt', sans-serif;
+	font-family: 'Space Mono', sans-serif;
 	font-weight: 600;
 	@media screen and (max-width: 768px) {
 	  font-size: 16px;
@@ -188,12 +69,16 @@ h2 {
 
 
 body { 
-	font-family: 'Cooper Hewitt', sans-serif;
-	font-weight: 400;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
 	font-size: 18px;
 	@media screen and (max-width: 768px) {
 	  font-size: 14px;
 	}
+}
+
+strong {
+	font-weight:500;
 }
 
 header {
@@ -208,7 +93,7 @@ header {
 }
 
 header a { 
-	font-family: 'Cooper Hewitt', sans-serif;
+	font-family: 'Space Mono', sans-serif;
 	font-weight:600;
 	text-decoration: none;
 	color: black;
@@ -219,6 +104,161 @@ header a {
 	  font-size: 30px;
 	}
  }
+ 
+ #support-logo {
+}
+
+.support-logotype {
+	font-family: 'Space Mono', sans-serif;
+	font-weight: 500;
+	font-size: 100px;
+	display:inline-block;
+	top:-18px;
+	position:relative;
+	@media screen and (max-width:640px) {
+	  font-size: 80px;
+	  top:-8px;
+	}
+	@media screen and (max-width:480px) {
+	  font-size: 40px;
+	  top:-4px;
+	}
+}
+
+#fm {
+	display:inline-block;
+}
+
+#fm div {
+    border: 1px solid #000;
+    min-width: 80px;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    @media screen and (max-width:640px) {
+			min-width: 30px;
+			min-height: 30px;
+			padding: 7px;
+		}
+    @media screen and (max-width:480px) {
+	  	min-width: 24px;
+			min-height: 24px;
+			padding: 5px;
+		}
+}
+
+.waves-1, .waves-2 {
+  -webkit-animation: pulse 5s ease-out 2s;
+	-moz-animation: pulse 5s ease-out 2s;
+	animation: pulse 5s ease-out 2s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+.fm-button {
+	opacity:1;
+	width:80px;
+	height:80px;
+	background:black;
+  border-radius: 160px;
+  color: white;
+  text-align: center;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  display:inline-block;
+  z-index:2;
+	position: relative;
+  top: 125px;
+  margin-left: 0px;
+  @media screen and (max-width:640px) {
+	  	width: 60px;
+			height: 60px;
+			font-size: 36px;
+			top:94px;
+		}
+  	@media screen and (max-width:480px) {
+	  	width: 30px;
+			height: 30px;
+			font-size: 20px;
+			top:56px;
+		}
+  }
+  
+  .bg-button {
+	opacity:0;
+	width:80px;
+	height:80px;
+	background:transparent;
+  border-radius: 160px;
+  color: transparent;
+  text-align: center;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  display:inline-block;
+   @media screen and (max-width:640px) {
+	  width: 60px;
+	  height: 60px;
+	  border-radius: 120px;
+	  font-size: 30px;
+	}
+  @media screen and (max-width:480px) {
+	  width: 30px;
+	  height: 30px;
+	  border-radius: 60px;
+	  font-size: 30px;
+	}
+  }
+
+	@-moz-keyframes pulse {
+	 0% {
+	   	-moz-transform: scale(0);
+	   	opacity: 0;
+	 }
+	 25% {
+	   	-moz-transform: scale(0);
+	   	opacity: 0.3;
+	 }
+	 50% {
+	   	-moz-transform: scale(1);
+	   	opacity: 0.6;
+	 }
+	 75% {
+	   	-moz-transform: scale(1);
+	   	opacity: 1.0;
+	 }
+	 100% {
+	   	-moz-transform: scale(1);
+	   	opacity: 1.0;
+	 }
+	}
+	@-webkit-keyframes "pulse" {
+	 0% {
+	    -webkit-transform: scale(0);
+	   	opacity: 0;
+	 }
+	 25% {
+	    -webkit-transform: scale(0);
+	   	opacity: 0.3;
+	 }
+	 50% {
+	    -webkit-transform: scale(1);
+	   	opacity: 0.6;
+	 }
+	 75% {
+	    -webkit-transform: scale(1);
+	   	opacity: 1.0;
+	 }
+	 100% {
+	    -webkit-transform: scale(1);
+	   	opacity: 1.0;
+	 }
+	}
 
  .tagline {
 
@@ -231,9 +271,8 @@ header a {
 
  .tagline span {
 
- 	font-family: 'Cooper Hewitt', sans-serif;
+ 	font-family: 'Fira Sans', sans-serif;
  	font-size: 24px;
- 	text-decoration: underline;
  	font-weight: 300;
  	@media screen and (max-width: 768px) {
 	  font-size: 16px;
@@ -270,6 +309,13 @@ header a {
     margin-left: auto;
     margin-right: auto;
  }
+
+.profile-wrap {
+	display:flex;
+	 @media screen and (max-width: 768px) {
+	    display: block;
+	}
+}
 
 .profile {
 	-moz-box-sizing: border-box;
@@ -316,7 +362,7 @@ header a {
 
 
 .feature {
-    font-family: 'Courier Prime Sans', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     background-color: #f5f5f5;
     color: #444;
     text-align: center;
@@ -402,7 +448,7 @@ header a {
 }
 
 .number {
-	font-family: 'Courier Prime Sans', sans-serif;
+	font-family: 'Space Mono', sans-serif;
 	font-weight: 400;
 	font-size: 26px;
 	min-width: 140px;
@@ -448,7 +494,7 @@ header a {
 		li {
 			span.date {
 				margin-right:30px;
-				font-family: 'Courier Prime Sans', sans-serif;
+				font-family: 'Space Mono', sans-serif;
 				font-weight: 400;
 			}
 			a {
@@ -565,11 +611,11 @@ article {
 		margin: 60px auto;
 	}
 	span.all-updates {
-		font-family: 'Courier Prime Sans', sans-serif;
+		font-family: 'Space Mono', sans-serif;
 	}
 	span.date {
 		float: right;
-		font-family: 'Courier Prime Sans', sans-serif;
+		font-family: 'Space Mono', sans-serif;
 	}
 	.update-body {
 		margin: 30px 15px;
@@ -587,7 +633,7 @@ article {
 		background:#444;
 		z-index:1;
 		text-decoration:none;
-		font-family: 'Courier Prime Sans', sans-serif;
+		font-family: 'Space Mono', sans-serif;
 		text-transform: uppercase;
 		-webkit-animation:spin 8s linear infinite;
 	    -moz-animation:spin 8s linear infinite;
@@ -709,7 +755,7 @@ textarea:focus {
   padding-top: 15px;
   width: 100%;
   border: none;
-  font-family: 'Courier Prime Sans', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   text-transform: uppercase;
 }
 
@@ -721,7 +767,7 @@ textarea:focus {
     display: block;
     clear: both;
 
-    font-family: 'Courier Prime Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
   }

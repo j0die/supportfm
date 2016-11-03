@@ -39,6 +39,7 @@
 
  <!-- <img class="team-photo" src="{{ cms.holdingpage.group_photo|imageCrop(0) }}"> -->
 
+<div class="profile-wrap">
 
   <span>{% for row in cms.holdingpage.who_we_are %}</span>
   	<div class="profile">
@@ -46,7 +47,9 @@
     <span>{{ row.bio }}</span>
     <!-- <img src="{{ row.headshot|imageSize(200, 200) }}"> -->
   </div>{% endfor %}
-  
+
+</div>
+
 </div>
  </section>
 

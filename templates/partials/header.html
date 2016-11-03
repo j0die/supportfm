@@ -10,7 +10,19 @@
 <header> 
 <span class="translate">{% if page_class == 'espanol' %} View in <a href="/">English</a>{% else %} Ver en <a href="/espanol">Español </a>{% endif %}</span>
 
-<a href="/">Support.fm</a>
+<div id="support-logo">
+<span class="support-logotype">SUPPORT</span>
+
+<div id="fm">
+	<div class="fm-button">FM</div>
+	
+    <div class="waves-2">
+        <div class="waves-1">
+           <div class="bg-button"></div>
+        </div>
+    </div>
+</div>
+</div>
 
 <div class="tagline"> 
  <span>{% if page_class == 'espanol' %}{{ cms.holdingpagespanish.tagline|markdown }}{% else %}{{ cms.holdingpage.tagline|markdown }} {% endif %}</span>
