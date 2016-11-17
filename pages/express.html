@@ -80,12 +80,10 @@
 			<div class="row">
 	      <div class="col s12 m10 l10">
 		      
-		      <h5>Organization Profile</h5>
 		      {% for object in data %}
 		      <div class="card-panel white">
 					<h4>{{ object.name }}</h4>
 					{{ object.wysiwyg_text|safe }}
-					<a href="{{ object.donate_link }}" class="profile-donate">Donate Now</a>
 		      </div>
 		      {% endfor %}
 	      </div>
