@@ -68,46 +68,59 @@
 				    
 			    </div>
 			  </div>
-
-{{ cms.posts.name|first }}
-
-	  {% set data = cms.orgprofiles %}
-		{% set data = data|sort('publish_date', true) %}
-		{% set data = paginate(data, 18) %}
 		
 	    <div class="container main">
 		    
 			<div class="row">
 	      <div class="col s12 m10 l10">
 		      
-		      {% for object in data %}
 		      <div class="card-panel white">
-					<h4>{{ object.name }}</h4>
-					{{ object.wysiwyg_text|safe }}
-		      </div>
-		      {% endfor %}
-	      </div>
-	      
-	       
-	       
-	<!-- <div class="col s12 m4 offset-m1 l4 offset-l1">		
-	
-	
-	  <ul>
-	    {# {% for object in data %} #}
-	      <li><a href="{{ url(object) }}">{{ object.name }}</a></li>
-	   {#  {% endfor %} #}
-	  </ul>
-		 {# {% include "templates/partials/paginator.html" %} #}
+					<h4>Our Approach</h4>
+					{{ cms.express.our_approach|safe }}
+		      </div>   
 		      
-	      </div>
-	      -->
-	      
+	      </div>      
+	       
+	      	      
 	      <div class="col m2 l2">
 			      <img class="stamp" src="/static/images/express-stamp.png" width="100px" height="auto">
-	      </div>
-	      
+	      </div> 
 	    </div>
+	    
+	    
+	    	{% set data = cms.orgprofiles %}
+		{% set data = data|sort('name') %}
+		{% set data = paginate(data, 100) %}
+		  
+		  
+		      <table class="highlight">
+        <thead>
+          <tr>
+              <th data-field="org">Organization</th>
+              <th data-field="desc"></th>
+              <th data-field="issues">Issues</th>
+              <th data-field="link"></th>
+          </tr>
+        </thead>
+        
+        <tbody>
+				
+		{% for object in data %}
+			      
+	      <tr>
+            <td>{{ object.name }}</td>
+            <td>{{ object.description|safe }}</td>
+						<td>{{ object.issues }}</td>
+            <td><a class="donate" href="{{ object.link }}">Donate</a></td>
+        </tr>
+	      
+	      
+	  {% endfor %}
+	  
+	  {% include "templates/partials/paginator.html" %}
+          
+        </tbody>
+      </table>
 		    
 		    
 	    </div>

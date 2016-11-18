@@ -35,12 +35,16 @@
         {{ item.publish_date|date('F d Y') }}
       </li>
       <li>
-        <strong>WYSIWYG text: </strong>
-        {{ item.wysiwyg_text|safe }}
+        <strong>Description: </strong>
+        {{ item.description|safe }}
       </li>
       <li>
-        <strong>donate link: </strong>
-        {{ item.donate_link }}
+        <strong>issues: </strong>
+        {{ item.issues }}
+      </li>
+      <li>
+        <strong>Link: </strong>
+        {{ item.link }}
       </li>
       <li>
         <strong>Preview URL: </strong>
