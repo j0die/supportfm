@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding-40 {
+  padding: 40px !important;
+}
+
+.input-custom {
+  border: 1px solid #DDD !important;
+  max-width: 150px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin: auto !important;
+}

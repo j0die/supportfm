@@ -1,0 +1,21 @@
+{
+  "name": "stripe-charge-api",
+  "version": "0.0.0",
+  "description": "Stripe charge API",
+  "main": "server.js",
+  "repository": "",
+  "author": "Noodl.io <noodl@seipel-ibisevic.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~4.0.0",
+    "express-session": "~1.11.3",
+    "socket.io": "~0.9.14",
+    "stripe": "4.0.0",
+    "mongoose": "~3.6.13",
+    "body-parser": "~1.0.1",
+    "querystring": "~0.2.0",
+    "request": "~2.65.0",
+    "firebase": "~2.3.1",
+    "firebase-token-generator": "2.0.0"
+  }
+}
